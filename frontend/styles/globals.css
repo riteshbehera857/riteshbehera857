@@ -39,4 +39,8 @@ body{
 
 .mr:not(:last-child){
     margin-right: 10rem;
+
+    @media screen and (max-width: 360px){
+        margin-right: 5rem;
+    }
 }

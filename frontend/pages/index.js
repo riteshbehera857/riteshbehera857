@@ -9,8 +9,8 @@ import Nav from '../components/Nav'
 export default function Home() {
   return (
     <main className="bg-body w-full h-screen relative">
-      {/* <Nav /> */}
-      <section className="container h-full flex flex-col justify-center items-center">
+      <Nav />
+      <section id='home' className="container h-full flex flex-col justify-center items-center">
         <motion.h1
           animate={{ opacity: [1, 0.05] }}
           transition={{ duration: 3, ease: 'easeInOut' }}
@@ -32,7 +32,7 @@ export default function Home() {
               web developer, <br />
               web designer, <br />
               <span className='text-primary'>and</span> <br />
-              a life long lerner
+              a life long learner
             </motion.h1>
             <Link href="/work" >
               <motion.a
@@ -51,9 +51,9 @@ export default function Home() {
           transition={{ duration: 1, type: "spring" }}
           className="absolute h-[15rem] w-[15rem] lg:h-[15rem] lg:w-[15rem] rounded-full border-[20px] border-primary opacity-[0.5] bottom-[0] left-[0] lg:left-[45rem] "></motion.div>
       </section>
-      {/* <div id='work' className="flex flex-col items-center justify-between pt-10">
+      <section id='work' className="bg-body flex flex-col items-center justify-between pt-10 px-[2rem]">
         <h1 className="text-5xl font-body font-bold text-body_text underline decoration-primary decoration-double decoration-2 mb-8">My Work</h1>
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 place-items-center h-full w-full px-10">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-[4rem] lg:gap-10 place-items-center h-full w-full px-10">
           <WorkItem />
           <WorkItem />
           <WorkItem />
@@ -61,7 +61,7 @@ export default function Home() {
           <WorkItem />
           <WorkItem />
         </div>
-      </div> */}
+      </section>
     </main>
   )
 }
