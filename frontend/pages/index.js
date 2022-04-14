@@ -10,28 +10,29 @@ export default function Home() {
   return (
     <main className="bg-body w-full h-screen relative">
       {/* <Nav /> */}
-      <section className="container w-full h-full flex flex-col justify-center items-center">
+      <section className="container h-full flex flex-col justify-center items-center">
         <motion.h1
           animate={{ opacity: [1, 0.05] }}
           transition={{ duration: 3, ease: 'easeInOut' }}
-          className="font-body font-black uppercase stroke text-[11rem] lg:text-xxl text-center absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 noselect z-0">
+          className="font-body font-black uppercase stroke text-[8rem] lg:text-xxl text-center absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 noselect z-0">
           ritesh <br />
           behera
         </motion.h1>
-        <div className="z-50">
+        <div className="z-50 px-[1rem]">
           <motion.h3
             animate={{ opacity: [0, 1], x: [-100, 0] }}
             transition={{ delay: 2.5 }}
-            className="font-body font-medium text-[1.5rem] lg:text-3xl text-body_text">Hii, Myself Ritesh Behera
+            className="font-body font-medium text-[1.3rem] lg:text-3xl text-body_text"><span className='text-primary'>Hii</span>, Myself Ritesh Behera
           </motion.h3>
           <div>
             <motion.h1
               animate={{ opacity: [0, 1], x: [-100, 0] }}
               transition={{ delay: 3, type: "spring", stiffness: 10 }}
-              className="font-body text-[3.5rem] lg:text-8xl font-black leading-normal capitalize text-body_text mb-10">
+              className="font-body text-[3rem] lg:text-8xl font-black leading-normal capitalize text-body_text mb-10">
               web developer, <br />
               web designer, <br />
-              and a life long lerner
+              <span className='text-primary'>and</span> <br />
+              a life long lerner
             </motion.h1>
             <Link href="/work" >
               <motion.a

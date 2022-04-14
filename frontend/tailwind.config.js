@@ -4,6 +4,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      'sm': { 'max': '360px' }
+    },
     extend: {
       zIndex: {
         "1": "1"
