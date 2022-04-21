@@ -28,6 +28,14 @@ body{
     -webkit-text-stroke: 2px rgba(0, 0, 0, 1);
 }
 
+.mb:last-child{
+    margin-bottom: 12rem;
+}
+
+.mt:first-child{
+    margin-top: 5rem;
+}
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */

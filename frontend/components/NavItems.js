@@ -6,7 +6,7 @@ const NavItems = ({ children, path }) => {
     return (
         <>
             <Link href={path}>
-                <a className='font-body text-2xl text-center uppercase text-body_text rounded-md hover:bg-opacity-10 transition-all ease-in-out delay-150 active:ring active:ring-primary '>{children}</a>
+                <a className='font-body text-2xl text-center uppercase text-body_text hover:bg-primary rounded-[50%] hover:text-white transition-all ease-in-out delay-150 p-[1.2rem] active:ring active:ring-primary '>{children}</a>
             </Link>
         </>
     )
