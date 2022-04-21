@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Link from 'next/Link'
+import Link from 'next/link'
 import { AiOutlineHome, AiFillHome } from 'react-icons/ai'
 import { BsPeople, BsPeopleFill } from 'react-icons/bs'
 import { MdWorkOutline, MdOutlineContactSupport, MdWork } from 'react-icons/md'
